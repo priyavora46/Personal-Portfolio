@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Priya Vora</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #2B0052, #004D4D); /* Dark Purple to Dark Teal */
+            color: white;
+            overflow-x: hidden;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: #3A0CA3 !important; /* Dark Purple */
+            padding: 12px 0;
+            transition: 0.3s ease-in-out;
+        }
+
+        .navbar-brand {
+            color: #89CFF0 !important; /* Soft Blue */
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-link {
+            color: white !important;
+            font-weight: bold;
+        }
+
+        .nav-link:hover {
+            color: #89CFF0 !important; /* Soft Blue */
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 80px 20px;
+        }
+        .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1000px;
+    margin: auto;
+    flex-wrap: wrap;
+    flex-direction: row-reverse; /* This moves the image to the left */
+}
+
+        .about-content {
+            flex: 1;
+            font-size: 17px;
+            line-height: 1.8;
+            text-align: justify;
+            animation: slideUp 1.5s ease-in-out;
+        }
+        .about-content h1 {
+            font-size: 45px;
+            font-weight: bold;
+            color: #89CFF0;
+            margin-bottom: 20px;
+        }
+
+        /* Profile Image */
+        .about-image {
+    flex: 1;
+    max-width: 350px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+    margin-top: -30px; /* Moves image slightly upward */
+}
+.about-image img {
+    width: 100%;
+    max-width: 280px; /* Slightly smaller image */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+.about-image img:hover {
+    transform: scale(1.05);
+}
+
+
+        /* Button */
+        .btn-primary {
+            background-color: #89CFF0;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s ease-in-out;
+            margin-top: 20px;
+        }
+        .btn-primary:hover {
+            background-color: #3A0CA3;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .about-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .about-content {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="certificates.html">Certificates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="about-container">
+            <!-- Left Side - About Content -->
+            <div class="about-content">
+                <h1>Who Am I?</h1>
+                <p>I'm <strong>Priya Vora</strong>, a passionate <strong>2nd-year Computer Engineering student</strong> at <strong>Marwadi University</strong>, constantly exploring the world of technology, innovation, and problem-solving.</p>
+    
+                <p><strong>My Tech Journey:</strong><br>
+                I actively participate in <strong>hackathons, coding competitions, and API challenges</strong>, continuously enhancing my skills. I have experience in <strong>React.js, Node.js, MongoDB, and API Development</strong>, building scalable and efficient applications.</p>
+    
+                <p><strong>Beyond Code:</strong><br>
+                While technology excites me, I also love contributing to <strong>event management, volunteering, and non-technical activities</strong>. Whether it's coordinating an event, leading a workshop, or assisting in cultural fests, I thrive in collaborative environments.</p>
+    
+                <p><strong>My Vision:</strong><br>
+                I aim to create <strong>impactful solutions</strong>, contribute to real-world projects, and drive innovation. I believe in <strong>lifelong learning</strong>, adaptability, and making a difference through both technology and community-driven initiatives.</p>
+    
+                <a href="certificates.html" class="btn btn-primary">Explore My Achievements</a>
+            </div>
+    
+            <!-- Right Side - Image -->
+            <div class="about-image">
+                <img src="mypic3.jpg" alt="Priya Vora">
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>
+    

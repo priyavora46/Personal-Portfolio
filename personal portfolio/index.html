@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Priya Vora</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #2B0052, #004D4D); /* Dark Purple to Dark Teal */
+            color: white;
+            overflow-x: hidden;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: #3A0CA3 !important; /* Dark Purple */
+            padding: 12px 0;
+            transition: 0.3s ease-in-out;
+        }
+
+        .navbar-brand {
+            color: #89CFF0 !important; /* Soft Blue */
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-link {
+            color: white !important;
+            font-weight: bold;
+        }
+
+        .nav-link:hover {
+            color: #89CFF0 !important; /* Soft Blue */
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            text-align: center;
+            padding: 100px 20px;
+            animation: fadeIn 1.2s ease-in-out;
+        }
+
+        .hero-text {
+            flex: 1;
+            max-width: 500px;
+            text-align: left;
+            animation: slideUp 1.5s ease-in-out;
+        }
+
+        .hero h1 {
+            color: #89CFF0;
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-top: 10px;
+            color: #EAEAEA;
+        }
+
+        .hero .btn {
+            background: #008080;
+            color: white;
+            padding: 12px 25px;
+            font-size: 18px;
+            margin-top: 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s ease-in-out;
+        }
+
+        .hero .btn:hover {
+            background: #89CFF0;
+            color: black;
+        }
+
+        /* Profile Image */
+        .hero-img {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .hero-img img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: 5px solid #89CFF0;
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(40px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+            .hero-text {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="certificates.html">Certificates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Welcome to Priya's portfolio</h1>
+            <p>I am Priya Vora, a 2nd-year Computer Engineering student at Marwadi University, passionate about technology, problem-solving, and innovation. I actively participate in technical events, hackathons, and coding competitions, continuously enhancing my skills. Beyond coding, I am involved in volunteering for non-technical events, contributing to event coordination and management. I believe in exploring diverse
+                 opportunities, earning certifications, and taking on both technical and non-technical challenges to grow as a well-rounded individual.</p>
+            <a href="about.html" class="btn">Get To Know Me</a>
+        </div>
+        <div class="hero-img">
+            <img src="mypic3.jpg" alt="Your Picture"> <!-- Replace with your image -->
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
